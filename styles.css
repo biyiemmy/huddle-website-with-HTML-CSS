@@ -15,6 +15,9 @@ body {
 header {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
+    background: url("./images/bg-hero-desktop.svg");
+    background-color: hsl(193, 100%, 96%);
+    padding: 40px 60px
 }
 
 img {
@@ -24,12 +27,6 @@ img {
 
 ul {
     list-style: none;
-}
-
-header {
-    background: url("./images/bg-hero-desktop.svg");
-    background-color: hsl(193, 100%, 96%);
-    padding: 40px 60px
 }
 
 nav {
@@ -241,6 +238,7 @@ a {
 
 @media (max-width: 992px) {
     header {
+        min-width: 22rem;
         padding: 30px 20px;
     }
 
@@ -277,7 +275,7 @@ a {
     }
 
     .service-1,
-    .service-2 {
+    .service-3 {
         flex-direction: column-reverse;
     }
 
@@ -352,9 +350,8 @@ a {
 
 @media (max-width: 552px) {
 
-    nav,
-    img,
-    footer {
+    nav img,
+    .footer-logo {
         width: 150px;
         height: 25px;
     }
@@ -376,4 +373,12 @@ a {
         font-size: 14px !important;
     }
 
+}
+
+@media screen and (max-width: 405px) {
+    header {
+        font-size: 10px;
+        width: 100%;
+
+    }
 }
